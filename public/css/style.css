@@ -1,0 +1,59 @@
+body{
+    color: white;
+    background-color: black;
+}
+#a a{
+    display: block;
+    color: yellow;
+    text-decoration: underline;
+
+}
+
+
+#a a:first-child::before{
+    content: "Lien ";
+}
+
+#a a:nth-child(2)::before{
+    content: "Lien viers un site externe";
+    padding-right: 5px;
+}
+
+#a a:nth-child(3)::before{
+    content: "Lien vers un pdf";
+    padding-right: 5px;
+}
+#a a:nth-child(4)::after{
+    content: "Envoyer un courriel";
+    padding-left: 5px;
+}
+#a a:nth-child(5)::after{
+    content: "Effectuer un appel";
+    padding-left: 5px;
+}
+#a a:nth-child(6)::after{
+    content: "Envyez un texto";
+    padding-left: 5px;
+}
+
+span{color: yellow;text-decoration: underline;}
+
+#b div span:first-child::before{
+    content: "Retour a l'origine";
+}
+#b div span:nth-child(2)::before{
+    content: "optique de développement durable et equitable";
+}
+#b div span:nth-child(3)::before{
+    content: "producteurs et productrices desquels nous achetons";
+}
+#b div span:nth-child(4)::before{
+    content: "couriel";
+}
+#b div span:nth-child(5)::before{
+    content: "telephone";
+}
+
+#b div span:nth-child(6)::before{
+    content: "texto";
+}
